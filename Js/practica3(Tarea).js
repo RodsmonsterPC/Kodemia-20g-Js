@@ -55,25 +55,25 @@
 // switch(operacion) {
 
 //     case 1:
-//         operacion= valor1 + valor2
-//         console.log(operacion)
+//         operacion = valor1 + valor2
+        
 //         break
 
 //     case 2:
 //         operacion = valor1 - valor2
-//         console.log(operacion)
+        
 //         break
 //     case 3: 
 //         operacion = valor1 * valor2
-//         console.log(operacion)
+        
 //         break
 //     case 4:
 //         operacion = valor1/valor2
-//         console.log(operacion)
+        
 //         break
 //     default:
 //     console.log("Esa no es una opción")
 // }
-
+// console.log(`Su resultado es: ${operacion}`)
 
 
