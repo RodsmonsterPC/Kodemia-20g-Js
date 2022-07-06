@@ -47,23 +47,23 @@
 
 //! Practica String
 
-let mensaje = prompt("Escriba una oración")
+// let mensaje = prompt("Escriba una oración")
 
-let largo = mensaje.length
+// let largo = mensaje.length
 
-let vocales = ["a","e","i","o","u"]
+// let vocales = ["a","e","i","o","u"]
 
-let contadorVocales = 0;
+// let contadorVocales = 0;
 
-for (let i of mensaje.toLowerCase()){
-    if (vocales.includes(i)){
-        contadorVocales++;
-    }
-}
+// for (let i of mensaje.toLowerCase()){
+//     if (vocales.includes(i)){
+//         contadorVocales++;
+//     }
+// }
 
-let imprimir = mensaje.substring(0, mensaje.length)
+// let imprimir = mensaje.substring(0, mensaje.length)
 
-console.log(`Tu oración es de ${largo} caracteres, se tiene ${contadorVocales} vocales, ${imprimir}`)
+// console.log(`Tu oración es de ${largo} caracteres, se tiene ${contadorVocales} vocales, la oración es: ${imprimir}`)
 
 
 
