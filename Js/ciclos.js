@@ -54,13 +54,13 @@
 
 //! Practica 3
 
-let valor = parseInt(prompt("Digite un número del 1 al 10"))
+// let valor = parseInt(prompt("Digite un número del 1 al 10"))
 
-if (valor > 10 ){
-    console.log("Valores del 1 al 10 porfavor")
-}
+// if (valor > 10 ){
+//     console.log("Valores del 1 al 10 porfavor")
+// }
 
-for (let i = 0; i <= 10; i++){
+// for (let i = 0; i <= 10; i++){
 
-    console.log(`${valor} x ${i} = ${valor * i}`)
-}
+//     console.log(`${valor} x ${i} = ${valor * i}`)
+// }
