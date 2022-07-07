@@ -51,7 +51,7 @@
  
 //     sum += i;
 // }
-// console.log(sum)
+// alert(sum)
 // }
 
 //! Ejercicio 3
@@ -85,7 +85,7 @@
 // // }
 //  let imprimir = mensaje.substring(0, mensaje.length)
 
-// console.log( `Se tiene A = ${contadorVocala} E= ${contadorVocale} y espacios vacios= ${contadorVacios} oración: ${imprimir}`)
+// alert( `Se tiene A = ${contadorVocala} E= ${contadorVocale} y espacios vacios= ${contadorVacios} oración: ${imprimir}`)
 
 
 //! Ejemplo documentación
