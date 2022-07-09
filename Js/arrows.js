@@ -100,13 +100,13 @@
 // let valor = parseInt(prompt("Digite un valor del 1 al 100"))
 
 // function sumadorN(num){
-//     num = 3
+    
 //     let resultado = 0
 //     if (valor < 1 || valor >100 ){
 //         console.log("Un valor del 1 al 100 porfavor")
 //     }
 //     else{
-    
+//         valor = 3
 //         let sum = 0
 //         for(i=0 ; i <=valor; i++ ){
      
@@ -120,3 +120,66 @@
 // let imprimir = sumadorN(valor)
 // alert(`${imprimir}`)
 
+
+
+//? Ejercicio en clase
+//! Refactorizar funciones
+
+// let mensaje = prompt("Escriba una oración")
+
+// const  funciontextoReverso = str => {
+
+//     let resultado = ""
+
+//     for (let i = mensaje.length - 1; i >= 0 ; i-- ){
+//         resultado = resultado + mensaje.charAt(i);
+
+//     }
+//     return resultado;
+// }
+// let imprimir = funciontextoReverso(mensaje)
+// alert(`Su oracion fue ${mensaje} al reves seria: ${imprimir}`)
+
+// let gradosCentrigrados = parseInt(prompt("Porfavor escriba su temperatura en grados centigrados"))
+
+// const funcionConvetidorFahr =(temp) => {
+
+//     let gradosFah
+//     if (gradosCentrigrados == ""){
+//         alert("Faltan datos")
+//         return;
+//     }
+
+//     else (gradosFah = gradosCentrigrados * 9/5 + 32)
+
+
+//     return gradosFah;
+
+// }
+//     let imprimir = funcionConvetidorFahr(gradosCentrigrados)
+//     alert(`La temperatura en grados Fahrenheit es ${imprimir} ºF`)
+
+//! Practica grupal arrow
+
+// let mensaje = prompt("Escriba una oración")
+
+// const funcionPalindromo = (mensaje) => {
+
+//     let espacios = mensaje.replaceAll(" ",'')
+//     let resultado = ""
+
+    
+//     for (let i = espacios.length - 1; i >= 0 ; i-- ){
+//           resultado = resultado + espacios.charAt(i);
+          
+//     }
+//     if (espacios === resultado){
+//         console.log("Es un palindromo")
+//     }
+//     else{
+//         console.log("No es un palindromo")
+//     }
+    
+
+// }
+// funcionPalindromo(mensaje);
