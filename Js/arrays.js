@@ -33,7 +33,7 @@
 //! Ejercicio de la semana
 
 //? Obtener numeros pares de una array
-// let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // if (numeros == ""){
 //     console.log("Se necesita un array")
@@ -58,3 +58,158 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! Ejercicio en equipo 
+
+/**
+* Escribir una función
+* Reciba como parametro un array de ciudades
+* Retornar las ciudades capitalizadas
+* capitalize(['méxicO','RIo', 'Los AngelEs', 'esTAMBUL])
+* -> ['México','Rio', 'Los Angeles','Estambul']
+* Usar el metodo de array ForEach
+*/
+
+// let arrayCities = ['méxicO','RIo', 'Los AngelEs', 'esTAMBUL'];
+// let newCities = [];
+// const capitalize = (arrayCities) => {
+//     arrayCities.forEach(element => {
+//         newCities.push(element[0].toUpperCase() + element.slice(1).toLowerCase());
+//     });
+// }
+// capitalize(arrayCities);
+// console.log(newCities);
+
+
+//! Ejercicio 2 en equipo
+
+/**
+* Escribir una función
+* Reciba como parámetro Un array de ciudades
+* Retornar las ciudades capitalizadas
+* capitalize(['méxicO','RIo', 'Los AngelEs'])
+* -> ['México','Rio', 'Los Angeles']
+* Usar el método de array Map
+*/
+
+
+// let arrayCities = ['méxicO','RIo', 'Los AngelEs', 'esTAMBUL'];
+// let newCities = [];
+// const capitalize = (arrayCities) => {
+//     newCities = arrayCities.map(element => {
+//         return(element[0].toUpperCase() + element.slice(1).toLowerCase());
+//     });
+// }
+// capitalize(arrayCities);
+// console.log(newCities);
+
+
+//! Tarea 3
+
+//?Escribir al reves un array
+// * Función que reciba una palabra
+// * Retorna la palabra invertida
+// * La reversa del string lo haremos usando métodos de array
+// *  hint :  a un string no podemos aplicarle métodos array pero hay métodos de string que nos devuelve un array
+// *
+// * reverseStr('hola mundo')
+// * -> 'odnum aloh'
+
+// let mensaje = reverse("Hola mundo")
+
+// function reverse(str){
+//     return str.split("").reverse().join("");
+// }
+
+// let array = mensaje.split(",")
+//  console.log(array)
+
+
+//? Ejercicio 2
+
+// * Dado el siguiente arreglo de ciudades
+// *   ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA']
+// * Generar una función que capitalize cada elemento del array
+// * => Se puede resolver con .forEach() o .map()
+
+let arrayCities = ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA'];
+let newCities = [];
+const capitalize = (arrayCities) => {
+    newCities = arrayCities.map(element => {
+        return(element[0].toUpperCase() + element.slice(1).toUpperCase());
+    });
+}
+capitalize(arrayCities);
+console.log(newCities);
+
+
+
+//?Ejercicio 3
+
+// * Dado un arreglo con nombres de personas,
+// * Función que devuelva un arreglo con los nombres de las personas que empiezan con vocales y además capitalizados
+// *
+// * onlyNamesVowels( ['jorge','ana','ivan','sergio','oscar' ] )
+// * -> ['Ana','Ivan','Oscar']
+// *
+// * => Se puede resolver con .forEach() o .filter()
+// */
+
+// let nombres = ['jorge','ana','ivan','sergio','oscar' ]
+
+// let vocales = nombres
+
+// .filter((str) => {
+//     if (str[0] === 'a' || 
+//             str[0] === 'e' || 
+//             str[0] === 'i' || 
+//             str[0] === 'o' || 
+//             str[0] === 'u'){
+
+//                 return str;
+//             }
+// }).map((str)=> {
+
+//     return(str[0].toUpperCase() + str.slice(1).toLowerCase());
+// })
+
+// console.log(vocales);
+// function vocales(str){
+//     if (str[0] === 'a' || 
+//         str[0] === 'e' || 
+//         str[0] === 'i' || 
+//         str[0] === 'o' || 
+//         str[0] === 'u'){
+        
+             
+//             return true
+//     }
+//     else return false
+
+// }
+// function mayusculas(text){
+//     text[0].toUpperCase() + text.slice(1).toLowerCase()
+// }
+
+
+
+//  let resultado = nombres.filter(vocales)
+// resultado.forEach(mayusculas)
+
+// console.log(resultado);
