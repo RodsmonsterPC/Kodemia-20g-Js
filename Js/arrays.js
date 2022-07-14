@@ -148,15 +148,15 @@
 // * Generar una función que capitalize cada elemento del array
 // * => Se puede resolver con .forEach() o .map()
 
-let arrayCities = ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA'];
-let newCities = [];
-const capitalize = (arrayCities) => {
-    newCities = arrayCities.map(element => {
-        return(element[0].toUpperCase() + element.slice(1).toUpperCase());
-    });
-}
-capitalize(arrayCities);
-console.log(newCities);
+// let arrayCities = ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA'];
+// let newCities = [];
+// const capitalize = (arrayCities) => {
+//     newCities = arrayCities.map(element => {
+//         return(element[0].toUpperCase() + element.slice(1).toLowerCase());
+//     });
+// }
+// capitalize(arrayCities);
+// console.log(newCities);
 
 
 
@@ -173,10 +173,8 @@ console.log(newCities);
 
 // let nombres = ['jorge','ana','ivan','sergio','oscar' ]
 
-// let vocales = nombres
-
-// .filter((str) => {
-//     if (str[0] === 'a' || 
+// let vocales = nombres.filter((str) => {
+//         if (str[0] === 'a' || 
 //             str[0] === 'e' || 
 //             str[0] === 'i' || 
 //             str[0] === 'o' || 
@@ -190,6 +188,7 @@ console.log(newCities);
 // })
 
 // console.log(vocales);
+
 // function vocales(str){
 //     if (str[0] === 'a' || 
 //         str[0] === 'e' || 
@@ -213,3 +212,99 @@ console.log(newCities);
 // resultado.forEach(mayusculas)
 
 // console.log(resultado);
+
+
+//!Ejercicio Reduce
+
+// Función que reciba un array de nombre y esta debe devolver un string con las iniciales de los nombre
+ 
+// getInitial(['Ferdinand','Jose','Maria','Dora']) -> FJMD
+
+// const koders = ['Ferdinand','Jose','Maria','Dora']
+
+// const iniciales = (arr) => {
+
+//     let inicialesArray = arr.reduce((acc,cv) => {
+//         acc += cv[0].toUpperCase();
+//         return acc;
+//     }, "" )
+
+//     return inicialesArray;
+
+
+// }
+
+
+//  result = koders.reduce((acc, cv) => {
+//    acc += cv[0];
+//    return acc;
+//   }, '');
+ 
+
+// let result = iniciales(koders)
+// console.log(result)
+
+
+//! Ejercicio 2
+
+// Dado una arreglo compuesto por arreglos,
+// * crea una función que calcule la suma de los arreglos
+// *
+// * additionMultiArr(  [ [1,2,3] , [1,3,2] , [3,2,1] ] )
+// * -> 18
+
+// const valores = [[1,2,3] , [1,3,2] , [3,2,1]]
+
+// const sum = (numero) => {
+    
+//     let total = 0
+//     numero.forEach(value => {
+        
+//         if (value instanceof Array){
+//         let resultado = value.reduce((acctotal, cv ) => {
+//                 acctotal += cv;
+//                 return acctotal;
+//             }, 0)
+                
+//             total += resultado
+//         }
+        
+//     }); return total
+         
+// }
+
+// let result = sum(valores)
+// console.log(result)
+
+//! Ejercicio 3
+
+// función con .reduce()
+// * Dado un array de numeros, obtener la suma de solo los elementos positivos
+// * addAllPositives( [ 1, -4, 12, 0, -3, 29, -150] )
+// * -> 42
+
+
+// const valores = [ 1, -4, 12, 0, -3, 29, -150]
+
+// const sum = valores.reduce((acc,cv) => {
+
+//     if (cv >= 0){
+//     acc += cv;
+//     return acc;
+//     }
+    
+// })
+
+// console.log(sum)
+
+const sumPositivos = (arrReduce) => {
+    let totalpositivos = 0
+    let reduceResult = arrReduce.reduce((acc, cv) => {
+        if (cv > 0) {
+            totalpositivos += cv
+        }
+        return totalpositivos
+    }, 0)
+    return reduceResult
+}
+console.log(sumPositivos([1, -4, 12, 0, -3, 29, -150]));
