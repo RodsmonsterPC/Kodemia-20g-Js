@@ -286,25 +286,30 @@
 
 // const valores = [ 1, -4, 12, 0, -3, 29, -150]
 
-// const sum = valores.reduce((acc,cv) => {
+// const sum = (arr)  => {
 
-//     if (cv >= 0){
-//     acc += cv;
-//     return acc;
-//     }
-    
-// })
+//     let arratotal = arr.reduce((acc,cv) =>{
 
-// console.log(sum)
+//         if ( cv > 0 ){
 
-const sumPositivos = (arrReduce) => {
-    let totalpositivos = 0
-    let reduceResult = arrReduce.reduce((acc, cv) => {
-        if (cv > 0) {
-            totalpositivos += cv
-        }
-        return totalpositivos
-    }, 0)
-    return reduceResult
-}
-console.log(sumPositivos([1, -4, 12, 0, -3, 29, -150]));
+//             acc += cv;
+//         }
+//         return acc;
+//     }, 0)
+
+//     return arratotal;
+// }
+
+// console.log(sum(valores))
+
+// const sumPositivos = (arrReduce) => {
+//     let totalpositivos = 0
+//     let reduceResult = arrReduce.reduce((acc, cv) => {
+//         if (cv > 0) {
+//             totalpositivos += cv
+//         }
+//         return totalpositivos
+//     }, 0)
+//     return reduceResult
+// }
+// console.log(sumPositivos([1, -4, 12, 0, -3, 29, -150]));
