@@ -221,29 +221,29 @@
 *
 */
 
-let koders = [
-    {
-      name: "Ferdinand",
-      apellido: "Bracho",
-      edad: 30,
-      generacion: 2,
-      modulos: ["js", " python", " git/github"],
-    },
-    {
-      name: "jose",
-      apellido: "Hernandez",
-      edad: 20,
-      generacion: 13,
-      modulos: ["NodeJs"],
-    },
-    {
-      name: "Dora",
-      apellido: "Mesa",
-      edad: 27,
-      generacion: 16,
-      modulos: [" HTML / CSS"],
-    },
-  ];
+// let koders = [
+//     {
+//       name: "Ferdinand",
+//       apellido: "Bracho",
+//       edad: 30,
+//       generacion: 2,
+//       modulos: ["js", " python", " git/github"],
+//     },
+//     {
+//       name: "jose",
+//       apellido: "Hernandez",
+//       edad: 20,
+//       generacion: 13,
+//       modulos: ["NodeJs"],
+//     },
+//     {
+//       name: "Dora",
+//       apellido: "Mesa",
+//       edad: 27,
+//       generacion: 16,
+//       modulos: [" HTML / CSS"],
+//     },
+//   ];
 
 //   koders.forEach((obj, index, array) =>{
 
@@ -302,15 +302,18 @@ let koders = [
 
 //   }, 0);
 
-//   console.log(totallibros)
+//   console.log(`El número de libros es : ${totallibros}`)
 
 //   let totalAutores = library.forEach((autor) => {
 
-//     console.log(autor.author)
+//     console.log(` El autor es : ${autor.author}`)
 //   })
 
 
 //   let totalLibros = library.forEach((libro) => {
 
-//     console.log(libro.title)
+//     console.log(`El libro es: ${libro.title}`)
 //   })
+
+
+
