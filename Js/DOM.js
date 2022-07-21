@@ -292,29 +292,29 @@
 // 2. Agregar a cada koder en esa lista
 // 3. A todos los koders agregarles la clase "item koder"
 
-let koders =  [
-    {
-        name: 'Ferdinand',
-        lastName: 'Bracho',
-        age: 30,
-        generation: 2,
-        modulos: ['js','python', 'git'],
-    },
-    {
-        name: 'Alfredo',
-        lastName: 'Pi',
-        age: 20,
-        generation: 10,
-        modulos: ['Node', 'Cloud'],
-    },
-    {
-        name: 'Ale',
-        lastName: 'Pa',
-        age: 30,
-        generation: 1,
-        modulos: ['React'],
-    }
- ]
+// let koders =  [
+//     {
+//         name: 'Ferdinand',
+//         lastName: 'Bracho',
+//         age: 30,
+//         generation: 2,
+//         modulos: ['js','python', 'git'],
+//     },
+//     {
+//         name: 'Alfredo',
+//         lastName: 'Pi',
+//         age: 20,
+//         generation: 10,
+//         modulos: ['Node', 'Cloud'],
+//     },
+//     {
+//         name: 'Ale',
+//         lastName: 'Pa',
+//         age: 30,
+//         generation: 1,
+//         modulos: ['React'],
+//     }
+//  ]
 
 // let body = document.querySelector("body")
 
@@ -345,17 +345,17 @@ let koders =  [
 
 // let elemento = document.getElementById("lista")
 
-// let Ejercicio = koders.reduce((acc,cv) =>{
+// let nameKoders = koders.reduce((acc,koders2) =>{
 
 //    acc += `
   
 //        <ul class="koders">
 //         <li class="item_koder">
-//         ${cv.name}
-//         ${cv.lastName}
-//         tiene ${cv.age} años
-//         es de la generación ${cv.generation}
-//         cursando los modulos ${cv.modulos} 
+//         ${koders2.name}
+//         ${koders2.lastName}
+//         tiene ${koders2.age} años
+//         es de la generación ${koders2.generation}
+//         cursando los modulos ${koders2.modulos} 
 //         </li>
 
 //  </ul> 
@@ -366,4 +366,5 @@ let koders =  [
 
 // }, "")
 
-// elemento.innerHTML = Ejercicio
+// elemento.innerHTML = nameKoders
+
