@@ -35,8 +35,40 @@
   </head>
   <body>
 
+
+    <div class="container">
+      <div class="row d-flex">
+        <div class="my-4">
+          <button id= "eventoBoton" class="btn_show btn btn-primary fs-4">Show Card</button>
+          <div  class="row card_holder flex justify-content-center"></div>
+        </div>
+
+        <div class="my-4 d-flex flex-column input-div">
+          <div class="input-group">
+            <button id="eventoEscritura" class="btn_clear btn btn-primary fs-4">
+              Limpiar Campo
+            </button>
+            <input
+              type="text"
+              class="form-control input_text"
+              placeholder="Inserte algun texto"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <div class="text_div"></div>
+        </div>
+
+        <div class="my-4">
+          <span id="eventoMouse" class="w-25 badge text-bg-primary fs-4 mouse_target"
+            >Mouse Event</span
+          >
+          <div class="img-div"></div>
+        </div>
+      </div>
+    </div>
     
-       <div class="container">
+       <!-- <div class="container">
         <div id= "post" class="row">
 
         </div>
@@ -58,7 +90,7 @@
           <button> Registrarme</button>
         </form>
 
-       </section>
+       </section> -->
 
 
     <!-- Bootstrap JavaScript Libraries -->
