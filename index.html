@@ -34,9 +34,48 @@
       </style>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Usuarios</h1>
+    </div>
 
     <div class="container">
+      <div class="row">
+        <input
+          type="text"
+          class="form-control input_text"
+          placeholder="Buscan coincidencia"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+        />
+        <button class="mt-4 search-button btn btn-primary find_user">
+          Buscar
+        </button>
+
+        <div>
+          <ul id="list_users" class="mt-3" list-group list-group-flush>
+            <!-- Inseter -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row users_filtrado">
+
+      </div>
+    </div>
+    <!-- <div class="my-4 d-flex flex-column input-div">
+      <div class="input-group">
+        <input
+              type="text"
+              class="form-control input_text"
+              placeholder="Inserte algun texto"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+        </div> -->
+    <!-- <div class="container">
       <div class="row d-flex">
         <div class="my-4">
           <button id= "eventoBoton" class="btn_show btn btn-primary fs-4">Show Card</button>
@@ -66,7 +105,7 @@
           <div class="img-div"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     
        <!-- <div class="container">
         <div id= "post" class="row">
