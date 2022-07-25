@@ -31,6 +31,11 @@
         from {top: 0px;}
         to {top: 200px;}
       }
+
+      .filtro{
+
+        display: none;
+      }
       </style>
   </head>
   <body>
@@ -40,13 +45,17 @@
 
     <div class="container">
       <div class="row">
-        <input
+        <input id="buscador"
           type="text"
           class="form-control input_text"
           placeholder="Buscan coincidencia"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
         />
+        
+        <ul id="filtrado">
+          <li></li>
+        </ul>
         <button class="mt-4 search-button btn btn-primary find_user">
           Buscar
         </button>

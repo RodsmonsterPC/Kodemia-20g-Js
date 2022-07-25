@@ -500,10 +500,65 @@ let users = [
 
 let infoUsers = document.querySelector(".input_text")
 let buscarUsuario = document.querySelector(".find_user")
+let resultado = document.querySelector("#filtrado")
+
+const filtrarVivo = () =>{
+
+  resultado.innerHTML= "";
+  let texto = infoUsers.value.toLowerCase();
+
+  for (let koder of users){
+    let nombre = koder.name.toLowerCase();
+    let usuario = koder.username.toLowerCase();
+    let email = koder.email.toLowerCase();
+
+    if(nombre.indexOf(texto) !== -1 || 
+      usuario.indexOf(texto) !== -1 ||
+      email.indexOf(texto) !== -1){
+
+        resultado.innerHTML += `
+        
+        <li>${koder.name} ${koder.username} ${koder.email}</li>
+        `
+
+    }
+  }
+
+  if(resultado.innerHTML === ""){
+
+    resultado.innerHTML += `
+        
+        <li>Usuario inexistente</li>
+        `
+
+  }
+}
+
+infoUsers.addEventListener("keyup", filtrarVivo)
+filtrarVivo();
 
         //caso 1
         infoUsers.addEventListener("input", (e)=>{  //borrar esta linea y el parentesis y corechete de abajo.
         
+          // buscador
+          // document.addEventListener("keyup", koder=>{
+
+          //   if (koder.target.matches("#buscador")){
+          
+          //       if (koder.key ==="Escape")koder.target.value = ""
+          
+          //       document.querySelectorAll(".user_match").forEach(user =>{
+          
+          //           user.textContent.toLowerCase().includes(koder.target.value.toLowerCase())
+          //             ?user.classList.remove("filtro")
+          //             :user.classList.add("filtro")
+          //       })
+          
+          //   }
+          
+          
+          // })
+
             //caso 2
         buscarUsuario.addEventListener("click",()=>{
         
@@ -518,7 +573,7 @@ let buscarUsuario = document.querySelector(".find_user")
            usersFinal += `
            <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
+    <div class="d-flex w-100 justify-content-between user_match">
       <h5 class="mb-1">Usuarios Filtrados</h5>
       <small>${name}</small>
     </div>
@@ -534,3 +589,9 @@ let buscarUsuario = document.querySelector(".find_user")
 
        
         }); 
+
+//* Extra -> Modificar lo necesario para que 
+//* 1- se pinte la lista completa al cargar la pagina 
+//*     1.1 hint -> 'DOMContentLoaded'
+//* 2- Se haga la busqueda en cada caracter que se agregue a mi campo de busqueda 
+
