@@ -518,7 +518,7 @@ const filtrarVivo = () =>{
 
         resultado.innerHTML += `
         
-        <li>${koder.name} ${koder.username} ${koder.email}</li>
+        <li> Nombre: ${koder.name} Usuario: ${koder.username} Correo: ${koder.email}</li>
         `
 
     }
@@ -539,25 +539,7 @@ filtrarVivo();
 
         //caso 1
         infoUsers.addEventListener("input", (e)=>{  //borrar esta linea y el parentesis y corechete de abajo.
-        
-          // buscador
-          // document.addEventListener("keyup", koder=>{
-
-          //   if (koder.target.matches("#buscador")){
-          
-          //       if (koder.key ==="Escape")koder.target.value = ""
-          
-          //       document.querySelectorAll(".user_match").forEach(user =>{
-          
-          //           user.textContent.toLowerCase().includes(koder.target.value.toLowerCase())
-          //             ?user.classList.remove("filtro")
-          //             :user.classList.add("filtro")
-          //       })
-          
-          //   }
-          
-          
-          // })
+      
 
             //caso 2
         buscarUsuario.addEventListener("click",()=>{
@@ -594,4 +576,5 @@ filtrarVivo();
 //* 1- se pinte la lista completa al cargar la pagina 
 //*     1.1 hint -> 'DOMContentLoaded'
 //* 2- Se haga la busqueda en cada caracter que se agregue a mi campo de busqueda 
+
 
