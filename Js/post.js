@@ -1,4 +1,25 @@
 
+
+//Post
+       
+// const creatUser = (post) =>{
+
+//     const httpRequest = new XMLHttpRequest()
+    
+//     httpRequest.onload = (e) =>{
+    
+//     console.log(e.target.responseText)
+    
+//     }
+    
+//     httpRequest.open("POST",`https://koodemia-prueba1-default-rtdb.firebaseio.com/Post.json`, false)
+    
+    
+//     let userJson = JSON.stringify(post)
+//     httpRequest.send(userJson)  
+    
+//     }
+
 const getPost = (url) =>{
 
 // ! Paso a paso para su uso 
@@ -44,9 +65,12 @@ const getPost = (url) =>{
     return post
 }
 
-let postRender = getPost("https://dummyjson.com/posts")
+let postRender = getPost("https://koodemia-prueba1-default-rtdb.firebaseio.com/Post.json")
+console.log(postRender)
 
-postRender = postRender.posts
+// https://dummyjson.com/posts
+
+// postRender = postRender.posts
 
 
   
@@ -55,31 +79,64 @@ let posHolder = document.querySelector(".post_holder")
 
 const insertPost = (posts) => {
 
- let resultado = posts.reduce((acc, post) =>{
+let template = ""
 
-    console.log(post)
-    acc +=  `
 
+for (post in postRender){
+
+    
+    template += 
+    
+    `
     <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                <h5 class="card-title">${post.title}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">${post.id}</h6>
-                  <p class="card-text">${post.body}</p>
-                  
+                <h5 class="card-title">${postRender[post].title}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">${postRender[post].date}</h6>
+                  <p class="card-text">${postRender[post].body}</p>
+                  <button type="button" class="btn btn-primary">Editar</button>
                 </div>
               </div>
     
     `
-        return acc;
-    
- }, "")
-  posHolder.innerHTML = resultado
 }
+
+posHolder.innerHTML = template
+}
+
+    // for(key in post){
+ 
+    //     console.log(key)
+    // }
+//  let resultado = posts.reduce((acc, post) =>{
+
+    
+//     console.log(post)
+//     acc +=  `
+
+//     <div class="card" style="width: 18rem;">
+//                 <div class="card-body">
+//                 <h5 class="card-title">${post.title}</h5>
+//                   <h6 class="card-subtitle mb-2 text-muted">${post.id}</h6>
+//                   <p class="card-text">${post.body}</p>
+                  
+//                 </div>
+//               </div>
+    
+//     `
+//         return acc;
+    
+//  }, "")
+//   posHolder.innerHTML = resultado
+//  
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    insertPost(postRender)
+     insertPost(postRender)
+    
 })
+
+
+
 
 //     const filterUsers = (str) =>{
 //         let minusculas = str.toLowerCase()
@@ -120,7 +177,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 //         tabla.innerHTML = postCreados
 
 
-       
-    
+
+
 
 

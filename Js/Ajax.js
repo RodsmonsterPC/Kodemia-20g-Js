@@ -132,34 +132,104 @@
 
         //crear un usuario
 
-const creatUser = (user) =>{
+// const creatUser = (user) =>{
 
-const httpRequest = new XMLHttpRequest()
+// const httpRequest = new XMLHttpRequest()
 
-httpRequest.onload = (e) =>{
+// httpRequest.onload = (e) =>{
 
-console.log(e.target.responseText)
+// console.log(e.target.responseText)
 
-}
+// }
 
-httpRequest.open("POST", "https://koodemia-prueba1-default-rtdb.firebaseio.com/.json", false)
-
-
-let userJson = JSON.stringify(user)
-httpRequest.send(userJson)
+// httpRequest.open("POST","https://koodemia-prueba1-default-rtdb.firebaseio.com/Post.json", false)
 
 
-}
+// let userJson = JSON.stringify(user)
+// httpRequest.send(userJson)
 
-const userCreate = {
 
-firstName: "Rods",
-lastName: "Perez"
+// }
 
-}
+// const userCreate = {
 
-        
+// Titulo: "Ajax",
+// Contenido:"Como saber, que hacer con lo que tienes, en una base de datos",
+// Fecha:"27/07/2022"
 
+// }
 
 
 
+
+
+// // creatUser(userCreate)
+
+// //update
+// const uptadeData = (data) => {
+
+//         const hRequest = new XMLHttpRequest()
+
+//         hRequest.onload = (e) => {
+
+//                 console.log(e.target.responseText)
+//         }
+
+//         hRequest.open("PUT", "https://koodemia-prueba1-default-rtdb.firebaseio.com/user.json",false)
+
+//         hRequest.send(JSON.stringify(data))
+
+// }
+
+// const newData = {
+
+//         firstName: "rods",
+//         lastName: "Cerecedo"
+// }
+
+// uptadeData(newData)
+
+// //patch Agrega sin borrar los otros campos
+// const patchData = (data) => {
+
+//         const hRequest = new XMLHttpRequest()
+
+//         hRequest.onload = (e) => {
+
+//                 console.log(e.target.responseText)
+//         }
+
+//         hRequest.open("PATCH", "https://koodemia-prueba1-default-rtdb.firebaseio.com/user.json",false)
+
+//         hRequest.send(JSON.stringify(data))
+
+// }
+
+// const newCreation = {
+
+//         firstName: "rods",
+//         lastName: "Cerecedo"
+// }
+
+// uptadeData(newData)
+
+//Delete data
+
+// const deleteData = (userID) => {
+
+//         const hRequest = new XMLHttpRequest()
+
+//         hRequest.onload = (e) => {
+
+//                 console.log(e.target.responseText)
+//         }
+
+//         hRequest.open("DELETE", `https://koodemia-prueba1-default-rtdb.firebaseio.com/Post/${userID}.json`,false)
+
+//         hRequest.send()
+
+// }
+
+
+
+// deleteData("-N81L8TieCdLzxXeCQf-")
