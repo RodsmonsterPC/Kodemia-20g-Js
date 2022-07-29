@@ -73,8 +73,6 @@ console.log(postRender)
 // postRender = postRender.posts
 
 
-  
-
 let posHolder = document.querySelector(".post_holder")
 
 const insertPost = (posts) => {
@@ -93,7 +91,10 @@ for (post in postRender){
                 <h5 class="card-title">${postRender[post].title}</h5>
                   <h6 class="card-subtitle mb-2 text-muted">${postRender[post].date}</h6>
                   <p class="card-text">${postRender[post].body}</p>
+                  <a href="/Js/post_detail.html?postId=${post}">
                   <button type="button" class="btn btn-primary">Editar</button>
+                  </a>
+                  
                 </div>
               </div>
     
